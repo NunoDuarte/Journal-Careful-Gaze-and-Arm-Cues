@@ -18,6 +18,27 @@
 % The latest version can be obtained at:
 % http://www.ctan.org/pkg/cite
 % The documentation is contained in the cite.sty file itself.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{graphicx}
+\usepackage{diagbox}
+\usepackage{changepage}
+\usepackage{ctable}% http://ctan.org/pkg/ctable
+\newcommand{\var}{\textit}
+\newcommand{\proc}{\textbf}
+\newcommand{\prop}{\texttt}
+\newcommand{\plusplus}{{+}{+}}% Other options: 
+\newcommand*\ita[1]{\textit{#1}}
+\usepackage{array, booktabs, makecell, multirow}% new
+\usepackage{textcomp}
+\usepackage[dvipsnames,  x11names, table]{} % add more colors
+
+\definecolor{Gray}{gray}{0.9}
+\definecolor{Green}{rgb}{0.0, 0.5, 0.0}
+\definecolor{Yellow}{rgb}{0.85, 0.65, 0.13}
+\definecolor{Grey}{rgb}{0.7, 0.7, 0.7}
 
 
 % *** GRAPHICS RELATED PACKAGES ***
@@ -158,6 +179,12 @@
 \maketitle
 
 \input{0_abstract.tex}
+
+% Note that keywords are not normally used for peerreview papers.
+% \begin{IEEEkeywords}
+% IEEE, IEEEtran, journal, \LaTeX, paper, template.
+% \end{IEEEkeywords}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{1_intro.tex}
 \input{2_soa.tex}
@@ -166,13 +193,6 @@
 \input{5_results.tex}
 \input{6_robot.tex}
 \input{7_conclusion.tex}
-
-% Note that keywords are not normally used for peerreview papers.
-\begin{IEEEkeywords}
-IEEE, IEEEtran, journal, \LaTeX, paper, template.
-\end{IEEEkeywords}
-
-
 
 
 
