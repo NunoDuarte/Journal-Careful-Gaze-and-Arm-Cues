@@ -10,20 +10,20 @@
 \cmidrule(l){4-7} 
 \textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
 \midrule % In-table horizontal line
-\multirow{2}{*}{Red Cup}  & \multirow{2}{*}{Red Cup} & Not Careful & 0.77 & \textcolor{Grey}{0.23} & \textbf{0.82} & \textcolor{Grey}{0.18} \\
-  &  & Careful & \textcolor{Grey}{0.17} & \textbf{0.83} & \textcolor{Grey}{0.42} & 0.58 \\ 
+\multirow{2}{*}{Red Cup}  & \multirow{2}{*}{Red Cup} & Not Careful & 0.77 & \textcolor{Grey}{0.17} & \textbf{0.82} & \textcolor{Grey}{0.42} \\
+  &  & Careful & \textcolor{Grey}{0.23} & \textbf{0.83} & \textcolor{Grey}{0.18} & 0.58 \\ 
 \cmidrule(l){2-7} 
-\multirow{2}{*}{Champagne} & \multirow{2}{*}{Champagne} & & 0.4 & \textcolor{Grey}{0.6} & \textbf{1} & \textcolor{Grey}{0} \\ 
-  &  &  & \textcolor{Grey}{0} & \textbf{1} & \textcolor{Grey}{0.5} & 0.5 \\ 
+\multirow{2}{*}{Champagne} & \multirow{2}{*}{Champagne} & & 0.4 & \textcolor{Grey}{0} & \textbf{1} & \textcolor{Grey}{0.5} \\ 
+  &  &  & \textcolor{Grey}{0.6} & \textbf{1} & \textcolor{Grey}{0} & 0.5 \\ 
 \cmidrule(l){2-7} 
-\multirow{2}{*}{Transparent Cup} & \multirow{2}{*}{Transparent Cup}  & & \textbf{0.8} & \textcolor{Grey}{0.2} & 0.71 & \textcolor{Grey}{0.29}\\ 
-&  &  & \textcolor{Grey}{0.33} & 0.67 & \textcolor{Grey}{0.26} & \textbf{0.74} \\ 
+\multirow{2}{*}{Transparent Cup} & \multirow{2}{*}{Transparent Cup}  & & \textbf{0.8} & \textcolor{Grey}{0.33} & 0.71 & \textcolor{Grey}{0.26}\\ 
+&  &  & \textcolor{Grey}{0.2} & 0.67 & \textcolor{Grey}{0.29} & \textbf{0.74} \\ 
 \cmidrule(l){2-7} 
-\multirow{2}{*}{Red Mug} & \multirow{2}{*}{Red Mug}  & & \textbf{0.5} & \textcolor{Grey}{0.5} & 0 & \textcolor{Grey}{1} \\
- &  &  & \textcolor{Grey}{0} & \textbf{1} & \textcolor{Grey}{0.25} & 0.75 \\ 
+\multirow{2}{*}{Red Mug} & \multirow{2}{*}{Red Mug}  & & \textbf{0.5} & \textcolor{Grey}{0} & 0 & \textcolor{Grey}{0.25} \\
+ &  &  & \textcolor{Grey}{0.5} & \textbf{1} & \textcolor{Grey}{1} & 0.75 \\ 
 \cmidrule(l){2-7} 
-\multirow{2}{*}{Wine Glass} & \multirow{2}{*}{Wine Glass}  & & 0.57 & \textcolor{Grey}{0.23} & \textbf{0.6} & \textcolor{Grey}{0.4}\\ 
-&  &  & \textcolor{Grey}{0.4} & 0.6 & \textcolor{Grey}{0} & \textbf{1} \\ 
+\multirow{2}{*}{Wine Glass} & \multirow{2}{*}{Wine Glass}  & & 0.57 & \textcolor{Grey}{0.4} & \textbf{0.6} & \textcolor{Grey}{0}\\ 
+&  &  & \textcolor{Grey}{0.23} & 0.6 & \textcolor{Grey}{0.4} & \textbf{1} \\ 
 
 \bottomrule % Bottom horizontal line
 \end{tabular}
@@ -43,43 +43,43 @@
 \textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
 \midrule % In-table horizontal line
 
- & \textcolor{Yellow}{Red Cup}  & \multirow{2}{*}{Not Careful}  & \multirow{2}{*}{0.688} & \multirow{2}{*}{\textcolor{Grey}{0.312}} & \multirow{2}{*}{\textbf{0.46}} & \multirow{2}{*}{\textcolor{Grey}{0.54}} \\ %
-\textcolor{Yellow}{Transparent Cup} & \textcolor{Yellow}{Champagne} & \multirow{2}{*}{ Careful} & \multirow{2}{*}{\textcolor{Grey}{0.15}} &  \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.1}} & \multirow{2}{*}{\textbf{0.90}} \\ 
+ & \textcolor{Yellow}{Red Cup}  & \multirow{2}{*}{Not Careful}  & \multirow{2}{*}{0.688} & \multirow{2}{*}{\textcolor{Grey}{0.15}} & \multirow{2}{*}{\textbf{0.46}} & \multirow{2}{*}{\textcolor{Grey}{0.1}} \\ %
+\textcolor{Yellow}{Transparent Cup} & \textcolor{Yellow}{Champagne} & \multirow{2}{*}{ Careful} & \multirow{2}{*}{\textcolor{Grey}{0.312}} &  \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.54}} & \multirow{2}{*}{\textbf{0.90}} \\ 
  & \textcolor{Green}{Wine Glass} & & & & & \\ % 
  
  \cmidrule(l){2-7} 
- & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.5} & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{\textbf{0.53}} & \multirow{2}{*}{\textcolor{Grey}{0.47}} \\ % 
-\textcolor{Yellow}{Champagne} & \textcolor{Yellow}{Red Cup} & & \multirow{2}{*}{\textcolor{Grey}{0.1}} & \multirow{2}{*}{0.9} & \multirow{2}{*}{\textcolor{Grey}{0.15}} & \multirow{2}{*}{\textbf{0.85}}\\ % 
+ & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.5} & \multirow{2}{*}{\textcolor{Grey}{0.1}} & \multirow{2}{*}{\textbf{0.53}} & \multirow{2}{*}{\textcolor{Grey}{0.15}} \\ % 
+\textcolor{Yellow}{Champagne} & \textcolor{Yellow}{Red Cup} & & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{0.9} & \multirow{2}{*}{\textcolor{Grey}{0.47}} & \multirow{2}{*}{\textbf{0.85}}\\ % 
  & \textcolor{Green}{Wine Glass} &  & &  &  & \\ % 
  
  \cmidrule(l){2-7} 
- & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.47} & \multirow{2}{*}{\textcolor{Grey}{0.53}} & \multirow{2}{*}{\textbf{0.5}} & \multirow{2}{*}{\textcolor{Grey}{0.5}} \\ % 
-\textcolor{Yellow}{Red Cup} & \textcolor{Yellow}{Champagne} & & \multirow{2}{*}{\textcolor{Grey}{0}} & \multirow{2}{*}{1} & \multirow{2}{*}{\textcolor{Grey}{0.16}} & \multirow{2}{*}{\textbf{0.84}}\\ % 
+ & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.47} & \multirow{2}{*}{\textcolor{Grey}{0}} & \multirow{2}{*}{\textbf{0.5}} & \multirow{2}{*}{\textcolor{Grey}{0.16}} \\ % 
+\textcolor{Yellow}{Red Cup} & \textcolor{Yellow}{Champagne} & & \multirow{2}{*}{\textcolor{Grey}{0.53}} & \multirow{2}{*}{1} & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{\textbf{0.84}}\\ % 
  & \textcolor{Green}{Wine Glass} &  & &  &  & \\ % 
  
  \cmidrule(l){2-7} 
- & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.5} & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{\textbf{0.59}} & \multirow{2}{*}{\textcolor{Grey}{0.41}}\\ % 
-\textcolor{Green}{Wine Glass} & \textcolor{Yellow}{Red Cup} & & \multirow{2}{*}{\textcolor{Grey}{0.25}} & \multirow{2}{*}{0.75} & \multirow{2}{*}{\textcolor{Grey}{0.17}} & \multirow{2}{*}{\textbf{0.83}}\\ % 
+ & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.5} & \multirow{2}{*}{\textcolor{Grey}{0.25}} & \multirow{2}{*}{\textbf{0.59}} & \multirow{2}{*}{\textcolor{Grey}{0.17}}\\ % 
+\textcolor{Green}{Wine Glass} & \textcolor{Yellow}{Red Cup} & & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{0.75} & \multirow{2}{*}{\textcolor{Grey}{0.41}} & \multirow{2}{*}{\textbf{0.83}}\\ % 
  & \textcolor{Yellow}{Champagne} & &  &  &  & \\ % 
  
   \cmidrule(l){2-7} 
- & \textcolor{Yellow}{Red Cup} & & \multirow{2}{*}{0.688} & \multirow{2}{*}{\textcolor{Grey}{0.312}} & \multirow{2}{*}{\textbf{0.52}} & \multirow{2}{*}{\textcolor{Grey}{0.48}} \\
-\textcolor{Yellow}{Transparent Cup} & & & \multirow{2}{*}{\textcolor{Grey}{0.15}} & \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.04}} & \multirow{2}{*}{\textbf{0.96}}\\ % 
+ & \textcolor{Yellow}{Red Cup} & & \multirow{2}{*}{0.688} & \multirow{2}{*}{\textcolor{Grey}{0.15}} & \multirow{2}{*}{\textbf{0.52}} & \multirow{2}{*}{\textcolor{Grey}{0.04}} \\
+\textcolor{Yellow}{Transparent Cup} & & & \multirow{2}{*}{\textcolor{Grey}{0.312}} & \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.48}} & \multirow{2}{*}{\textbf{0.96}}\\ % 
  & \textcolor{Yellow}{Champagne} &  & &  &  &  \\ % 
  
   \cmidrule(l){2-7} 
- & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.5} & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{\textbf{0.55}} & \multirow{2}{*}{\textcolor{Grey}{0.45}} \\ % 
-\textcolor{Yellow}{Champagne} &  & & \multirow{2}{*}{\textcolor{Grey}{0.1}} & \multirow{2}{*}{0.9} & \multirow{2}{*}{\textcolor{Grey}{0.08}} & \multirow{2}{*}{\textbf{0.92}}\\ %
+ & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.5} & \multirow{2}{*}{\textcolor{Grey}{0.1}} & \multirow{2}{*}{\textbf{0.55}} & \multirow{2}{*}{\textcolor{Grey}{0.08}} \\ % 
+\textcolor{Yellow}{Champagne} &  & & \multirow{2}{*}{\textcolor{Grey}{0.5}} & \multirow{2}{*}{0.9} & \multirow{2}{*}{\textcolor{Grey}{0.45}} & \multirow{2}{*}{\textbf{0.92}}\\ %
  & \textcolor{Yellow}{Red Cup} & &  &  &  & \\ %   
  
   \cmidrule(l){2-7} 
- & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.47} & \multirow{2}{*}{\textcolor{Grey}{0.53}} & \multirow{2}{*}{\textbf{0.5}} & \multirow{2}{*}{\textcolor{Grey}{0.5}} \\ % 
-\textcolor{Yellow}{Red Cup} &  & & \multirow{2}{*}{\textcolor{Grey}{0}} & \multirow{2}{*}{1} & \multirow{2}{*}{\textcolor{Grey}{0.09}} &  \multirow{2}{*}{\textbf{0.91}}\\ % 
+ & \textcolor{Yellow}{Transparent Cup} & & \multirow{2}{*}{0.47} & \multirow{2}{*}{\textcolor{Grey}{0}} & \multirow{2}{*}{\textbf{0.5}} & \multirow{2}{*}{\textcolor{Grey}{0.09}} \\ % 
+\textcolor{Yellow}{Red Cup} &  & & \multirow{2}{*}{\textcolor{Grey}{0.53}} & \multirow{2}{*}{1} & \multirow{2}{*}{\textcolor{Grey}{0.5}} &  \multirow{2}{*}{\textbf{0.91}}\\ % 
  & \textcolor{Yellow}{Champagne} &  &  &  & \\ % 
  
   \cmidrule(l){2-7} 
-\textcolor{Yellow}{Transparent Cup}  &  & & \multirow{2}{*}{0.61} & \multirow{2}{*}{\textcolor{Grey}{0.39}} & \multirow{2}{*}{\textbf{0.625}} & \multirow{2}{*}{\textcolor{Grey}{0.375}} \\ % 
- & \textcolor{Yellow}{Champagne}  & & \multirow{2}{*}{\textcolor{Grey}{0.15}} & \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.3}} &  \multirow{2}{*}{\textbf{0.7}}\\ % 
+\textcolor{Yellow}{Transparent Cup}  &  & & \multirow{2}{*}{0.61} & \multirow{2}{*}{\textcolor{Grey}{0.15}} & \multirow{2}{*}{\textbf{0.625}} & \multirow{2}{*}{\textcolor{Grey}{0.3}} \\ % 
+ & \textcolor{Yellow}{Champagne}  & & \multirow{2}{*}{\textcolor{Grey}{0.39}} & \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.375}} &  \multirow{2}{*}{\textbf{0.7}}\\ % 
 \textcolor{Yellow}{Red Cup}  & &  &  &  & \\ % 
  
 \bottomrule % Bottom horizontal line
@@ -101,20 +101,20 @@
 \textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
 \midrule % In-table horizontal line
 
-\multirow{2}{*}{EPFL 10\%}  & \multirow{1}{*}{QMUL} & Not Careful & 1 & \textcolor{Grey}{0} & \textbf{0.5625} &  \textcolor{Grey}{0.4375}\\
-  &   & Careful & \textcolor{Grey}{0} & 1 & \textcolor{Grey}{0.2} & \textbf{0.8} \\
+\multirow{2}{*}{EPFL 10\%}  & \multirow{1}{*}{QMUL} & Not Careful & 1 & \textcolor{Grey}{0} & \textbf{0.5625} &  \textcolor{Grey}{0.2}\\
+  &   & Careful & \textcolor{Grey}{0} & 1 & \textcolor{Grey}{0.4375} & \textbf{0.8} \\
   
   \cmidrule(l){2-7} 
-\multirow{2}{*}{EPFL 20\%}  & \multirow{1}{*}{QMUL} &  & 0.92 & \textcolor{Grey}{0.08} & \textbf{0.5} &  \textcolor{Grey}{0.5}\\
-  &   &  & \textcolor{Grey}{0.14} & 0.86 & \textcolor{Grey}{0.2} & \textbf{0.8}  \\ 
+\multirow{2}{*}{EPFL 20\%}  & \multirow{1}{*}{QMUL} &  & 0.92 & \textcolor{Grey}{0.14} & \textbf{0.5} &  \textcolor{Grey}{0.2}\\
+  &   &  & \textcolor{Grey}{0.08} & 0.86 & \textcolor{Grey}{0.5} & \textbf{0.8}  \\ 
   
 \cmidrule(l){2-7} 
-\multirow{2}{*}{EPFL 40\%}  & \multirow{1}{*}{QMUL} &  & 0.94 & \textcolor{Grey}{0.06} & \textbf{0.5} &  \textcolor{Grey}{0.5}\\
-  &   &  & \textcolor{Grey}{0.18} & 0.82 & \textcolor{Grey}{0.13} & \textbf{0.87}  \\
+\multirow{2}{*}{EPFL 40\%}  & \multirow{1}{*}{QMUL} &  & 0.94 & \textcolor{Grey}{0.18} & \textbf{0.5} &  \textcolor{Grey}{0.13}\\
+  &   &  & \textcolor{Grey}{0.06} & 0.82 & \textcolor{Grey}{0.5} & \textbf{0.87}  \\
   
 \cmidrule(l){2-7} 
-\multirow{2}{*}{EPFL 50\%}  & \multirow{1}{*}{QMUL} &  & 0.7 & \textcolor{Grey}{0.3} & \textbf{0.5} &  \textcolor{Grey}{0.5}\\
-  &   &  & \textcolor{Grey}{0.29} & 0.71 & \textcolor{Grey}{0.27} & \textbf{0.73}  \\
+\multirow{2}{*}{EPFL 50\%}  & \multirow{1}{*}{QMUL} &  & 0.7 & \textcolor{Grey}{0.29} & \textbf{0.5} &  \textcolor{Grey}{0.27}\\
+  &   &  & \textcolor{Grey}{0.3} & 0.71 & \textcolor{Grey}{0.5} & \textbf{0.73}  \\
   
 \midrule % In-table horizontal line
 \midrule % In-table horizontal line
