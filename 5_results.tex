@@ -9,7 +9,7 @@
 \textbf{Type of Cup} &  &  & \multicolumn{2}{c}{Acceleration Phase} & \multicolumn{2}{c}{Deceleration Phase} &\\ % Column names row
 \cmidrule(l){4-7} 
 \textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
-\midrule % In-table horizontal line
+\midrule % In-table horizonta0l line
 \multirow{2}{*}{Red Cup}  & \multirow{2}{*}{Red Cup} & Not Careful & 0.77 & \textcolor{Grey}{0.17} & \textbf{0.82} & \textcolor{Grey}{0.42} \\
   &  & Careful & \textcolor{Grey}{0.23} & \textbf{0.83} & \textcolor{Grey}{0.18} & 0.58 \\ 
 \cmidrule(l){2-7} 
@@ -121,4 +121,37 @@
 \end{tabular}
 \label{tab:qmul} % A label for referencing this table elsewhere, references are used in text as \ref{label}
 \caption{Classifier to new datasets. \\Training set: One cup type; Testing set: QMUL dataset with new people and new cup types.}
+\end{table*}
+
+
+
+%%%%% IST dataset %%%%%%%%%%%%
+
+\begin{table*} 
+\centering 
+\begin{tabular}{l l c c c c c c} 
+\toprule % Top horizontal line
+ & & & \multicolumn{5}{c}{\textbf{Acceleration Approach}} \\ 
+\cmidrule(l){4-7} 
+\textbf{} &  &  & \multicolumn{2}{c}{Training Set} & \multicolumn{2}{c}{Testing Set} &\\ % Column names row
+\cmidrule(l){4-7} 
+\textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
+\midrule % In-table horizontal line
+
+\multirow{2}{*}{EPFL 10\%}  & \multirow{1}{*}{IST} & Not Careful & 0.45 & \textcolor{Grey}{0.02} & \textbf{0.65} &  \textcolor{Grey}{0.18}\\
+  &   & Careful & \textcolor{Grey}{0.55} & 0.97 & \textcolor{Grey}{0.35} & \textbf{0.82} \\
+  
+  \cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 20\%}  & \multirow{1}{*}{IST} &  & 0.58 & \textcolor{Grey}{0.11} & \textbf{0.51} &  \textcolor{Grey}{0.22}\\
+  &   &  & \textcolor{Grey}{0.42} & 0.88 & \textcolor{Grey}{0.49} & \textbf{0.78}  \\ 
+  
+\cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 40\%}  & \multirow{1}{*}{IST} &  & 0.55 & \textcolor{Grey}{0.10} & \textbf{0.52} &  \textcolor{Grey}{0.23}\\
+  &   &  & \textcolor{Grey}{0.45} & 0.89 & \textcolor{Grey}{0.47} & \textbf{0.77}  \\
+  
+\midrule % In-table horizontal line
+\midrule % In-table horizontal line
+\end{tabular}
+\label{tab:qmul} % A label for referencing this table elsewhere, references are used in text as \ref{label}
+\caption{Classifier to new datasets. \\Training set: One cup type; Testing set: IST dataset with new people with the same cup as in the EPFL dataset}
 \end{table*}
