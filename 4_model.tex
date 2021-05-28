@@ -3,9 +3,11 @@
 - present a short version of the deceleration phase (previous paper)
 - explain why you decide to resort to this new approach
 
+Let $x \in D \subset \mathbb{R}^{+}$ denote the distance of the human wrist towards the handover meeting point. 
+
 \subsection{Deceleration Phase}
 
-Let $x \in D \subset \mathbb{R}^{+}$ denote the distance of the human wrist towards the handover meeting point. Consider a behavior encoded as a state-dependent dynamical system (DS)
+Consider a behavior encoded as a state-dependent dynamical system (DS)
 %
 \begin{equation}
 \dot{x} = \pmb{\textnormal{f}}(x)
@@ -20,6 +22,8 @@ Our approach defines each ``carefulness'' condition, \textit{careful} and \texti
 \label{eq:2}
 \end{equation}
 where $h^{k}(x) = \frac{\pi^{k} \mathcal{N}({{x}^{t}}, {\dot{x}^{t}}, \mu^{k}, \Sigma^{k})}{\sum_{i=1}^{K} \pi^{k} \mathcal{N}({{x}^{t}}_n, {\dot{x}^{t}}_n, \mu^{i}, \Sigma^{i})}$, $h^{k}(x) > $ 0, and $\sum_{n=1}^{K} h^{k}(x)$ = 1. The GMMs are computed using the stable estimator of dynamical systems (SEDS) approach \cite{khansari2011learning}. 
+
+- mention limitations of this approach. The model is focused on the latter stage of the manipulation hence the recognition happens later. The models did not provide useful results for regions outside of the learned models. When testing the generated velocities for both models were very similar not allowing the classifier to distinguish between the two. 
 
 \subsection{Acceleration Phase}
 
