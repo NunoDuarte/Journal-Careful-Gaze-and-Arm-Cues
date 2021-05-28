@@ -1,13 +1,42 @@
-\section{Human Handover Analysis}
+\section{Human to Human Handover}
+
+- here we talk about the dataset used for understanding human manipulation of cups with different properties, characteristics, shapes, etc.
+
+- talk about the necessity of performing these HHI experiments 
 
 \subsection{Experimental Scenario}
-- talk about the necessity of performing this HHI experiments 
 
-- explain the HHI experiment
+The experiments includes 4 participants, all male, with age between 25-35 years old, and academic employees. The experimental task involves grasping a cup from a table and hand it over to a subject on the opposite side that places it back in the Figure \ref{fig:epfl_dataset}.
 
-- present an image
+The experiment is performed under two conditions: (i) empty cup, and (ii) cup 90\% filled with water. For each condition the experiment is repeated a minimum of 4 times per participant for each cup manipulated. There are 3 cups: red cup, plastic cup, and champagne cup. Each participant had to grasp the cups with their preferred hand (right hand for all) and there were no restriction on the type of grasp. Motion capture system (OptiTrack) recorded right-hand wrist's location for each participants as well as the cup's location. A total of 30 right-hand wrist trajectories were collected for either of the two conditions. This HHI dataset was gathered in collaboration with the High Performance Humanoid Technologies Lab (H2T) of the Karlsruher Institut für Technologie (KIT)~\footnote{\url{http://h2t.anthropomatik.kit.edu/english/index.php}}~\cite{starke2019force}.
 
-\subsection{Handover Analysis}
+here it is a figure illustrating the EPFL dataset.
+    \begin{figure}
+        \centering
+        \begin{tabular}{@{}c@{}}
+            \centering
+            \includegraphics[width=0.225\textwidth]{example-image-a}
+        \end{tabular}
+        \hfill
+        \begin{tabular}{@{}c@{}}
+            \centering 
+            \includegraphics[width=0.225\textwidth]{example-image-b}
+        \end{tabular}
+        \vskip\baselineskip
+        \begin{tabular}{@{}c@{}}
+            \centering 
+            \includegraphics[width=0.225\textwidth]{example-image-c}
+        \end{tabular}
+        \hfill
+        \begin{tabular}{@{}c@{}}
+            \centering 
+            \includegraphics[width=0.225\textwidth]{example-image-a}
+        \end{tabular}
+        \caption{The HHI scenario from the dataset}
+        \label{fig:epfl_dataset}
+    \end{figure}
+    +
+\subsection{Handover Motion Analysis}
 
 - analysis the data distance/velocity (inverse time of flight)
 
