@@ -1,35 +1,16 @@
 \section{Experimental Results}
 
-\begin{table*} 
-\centering 
-\begin{tabular}{l l c c c c c c} 
-\toprule % Top horizontal line
- & & & \multicolumn{5}{c}{\textbf{Carefulness Detection}} \\ 
-\cmidrule(l){4-7} 
-\textbf{Type of Cup} &  &  & \multicolumn{2}{c}{Acceleration Phase} & \multicolumn{2}{c}{Deceleration Phase} &\\ % Column names row
-\cmidrule(l){4-7} 
-\textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
-\midrule % In-table horizonta0l line
-\multirow{2}{*}{Red Cup}  & \multirow{2}{*}{Red Cup} & Not Careful & 0.77 & \textcolor{Grey}{0.17} & \textbf{0.82} & \textcolor{Grey}{0.42} \\
-  &  & Careful & \textcolor{Grey}{0.23} & \textbf{0.83} & \textcolor{Grey}{0.18} & 0.58 \\ 
-\cmidrule(l){2-7} 
-\multirow{2}{*}{Champagne} & \multirow{2}{*}{Champagne} & & 0.4 & \textcolor{Grey}{0} & \textbf{1} & \textcolor{Grey}{0.5} \\ 
-  &  &  & \textcolor{Grey}{0.6} & \textbf{1} & \textcolor{Grey}{0} & 0.5 \\ 
-\cmidrule(l){2-7} 
-\multirow{2}{*}{Transparent Cup} & \multirow{2}{*}{Transparent Cup}  & & \textbf{0.8} & \textcolor{Grey}{0.33} & 0.71 & \textcolor{Grey}{0.26}\\ 
-&  &  & \textcolor{Grey}{0.2} & 0.67 & \textcolor{Grey}{0.29} & \textbf{0.74} \\ 
-\cmidrule(l){2-7} 
-\multirow{2}{*}{Red Mug} & \multirow{2}{*}{Red Mug}  & & \textbf{0.5} & \textcolor{Grey}{0} & 0 & \textcolor{Grey}{0.25} \\
- &  &  & \textcolor{Grey}{0.5} & \textbf{1} & \textcolor{Grey}{1} & 0.75 \\ 
-\cmidrule(l){2-7} 
-\multirow{2}{*}{Wine Glass} & \multirow{2}{*}{Wine Glass}  & & 0.57 & \textcolor{Grey}{0.4} & \textbf{0.6} & \textcolor{Grey}{0}\\ 
-&  &  & \textcolor{Grey}{0.23} & 0.6 & \textcolor{Grey}{0.4} & \textbf{1} \\ 
+\subsection{Results for different cups}
 
-\bottomrule % Bottom horizontal line
-\end{tabular}
-\label{tab:accele_vs_decele}
-\caption{Training set: One cup type; Testing set: Same cup type.}
-\end{table*}
+  \begin{tikzpicture}
+    \draw (0,3)  node[above]{Deformable}  -- (0,-3) node[below]                 {Non-deformable}(-3,0) node[xshift=-6pt,rotate=90] {Non-breakable} -- (3,0)  node[xshift=6pt,rotate=-90] {Breakable};
+    \node at (-1.5,1.5) {\includegraphics[width = 0.04\textwidth]{Images/transparent_cup.jpg}\includegraphics[width = 0.07\textwidth]{Images/red_cup.jpg}};
+    \node at (1.5,1.5) {};
+    \node at (-1.5,-1.5) {\includegraphics[width = 0.1\textwidth]{Images/champagne_cup.jpg}};
+    \node at (1.5,-1.5) {\includegraphics[width = 0.1\textwidth]{Images/wine_glass1.png}};
+  \end{tikzpicture}
+
+\subsection{Results for different datasets}
 
 
 \begin{table*} 
