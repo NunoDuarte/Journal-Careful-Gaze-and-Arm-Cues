@@ -78,8 +78,9 @@ A model trained on Rigid plastics learns the opposite hence Full cups actions fo
 
 %%%%% QMUL dataset %%%%%%%%%%%%
 
-\begin{table*} 
+\begin{table} 
 \centering 
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{l l c c c c c c} 
 \toprule % Top horizontal line
  & & & \multicolumn{5}{c}{\textbf{Acceleration Approach}} \\ 
@@ -107,16 +108,20 @@ A model trained on Rigid plastics learns the opposite hence Full cups actions fo
 \midrule % In-table horizontal line
 \midrule % In-table horizontal line
 \end{tabular}
+}
 \caption{Classifier to new datasets. \\Training set: One cup type; Testing set: QMUL dataset with new people and new cup types.}
 \label{tab:qmul} 
-\end{table*}
+\end{table}
 
-
+Conclusions on QMUL: 
+For a different dataset, the classifier can continue to correctly identify manipulation of different cups: Full cup actions are predominantly classified as Careful manipulations. Even for untrained cup types and unknown people. Empty cup actions have no preference on the type of manipulation. For different data sampling rate (30 Hz instead of 120 Hz). Different acquisition technique (3D estimation from stereo vision the 3D center of mass of the object vs infra-red markers on the base of the cup)
+Picking too much data will add noise to the system. It is important to not add too much data to the model has it increases the number of outliers which affect the overall representation of NOT Careful vs Careful manipulation
 
 %%%%% IST dataset %%%%%%%%%%%%
 
-\begin{table*} 
+\begin{table} 
 \centering 
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{l l c c c c c c} 
 \toprule % Top horizontal line
  & & & \multicolumn{5}{c}{\textbf{Acceleration Approach}} \\ 
@@ -140,9 +145,12 @@ A model trained on Rigid plastics learns the opposite hence Full cups actions fo
 \midrule % In-table horizontal line
 \midrule % In-table horizontal line
 \end{tabular}
+}
 \caption{Classifier to new datasets. \\Training set: One cup type; Testing set: IST dataset with new people with the same cup as in the EPFL dataset}
 \label{tab:ist} 
-\end{table*}
+\end{table}
+
+Conclusions on IST: 
 
 \subsection{Discussion}
 
