@@ -58,10 +58,19 @@
 \label{tab:one_vs_all} 
 \end{table*}
 
-Conclusions from Table \ref{tab:one_vs_all} 
+Conclusions from Table \ref{tab:one_vs_all}:
 Training on one plastic and testing on the rest: 86\% $\pm$ 2.9\% Full cups are Careful, 49.6\% $\pm$ 2.9\% Empty cups are NOT Careful. Training on one plastic and testing on other plastics: 93\% $\pm$ 2.2\% Full cups are Careful, 52\% $\pm$ 2.1\% Empty cups are NOT Careful. Training on glass and testing on plastics: 83\% Full cups are Careful,	59\% Empty cups are NOT Careful.
 
-Soft plastics vs Rigid plastics: 70\% vs 92\% for Full cups are Careful, 63\% vs 55\% for Empty cups are NOT Careful.
+Soft plastics vs Rigid plastics: 70\% vs 92\% for Full cups are Careful, 63\% vs 55\% for Empty cups are NOT Careful. 
+
+The classifier predicts that unknown Full cups are predominantly classified as Careful manipulations irrespective of the type of cup the model is trained on.
+Training and testing on plastics achieves the best results since it induces similar characteristics (e.g. risk of breaking, friction, weight, etc.) 
+Training a model on glass and testing on plastics worsens the likelihood of detecting Full cups as Careful manipulations which could be induced by different characteristics being present (glass can break, and glass is heavier than plastic)
+Soft plastics vs Rigid plastics: 		
+Soft is difficult to handle when full of water, deformable;
+Rigid plastic is closer to a glass, not deformable; 
+A model trained on soft plastics learns that Full cups actions are extremely difficult, hence Full cups actions for Rigid plastics have a higher tendency to be classified NOT Careful.
+A model trained on Rigid plastics learns the opposite hence Full cups actions for soft plastics are mostly classified as Careful manipulations
 
 \subsection{Results for different datasets}
 
