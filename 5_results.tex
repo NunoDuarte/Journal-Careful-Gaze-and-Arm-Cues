@@ -74,7 +74,51 @@ A model trained on Rigid plastics learns the opposite hence Full cups actions fo
 
 \subsection{Results for different datasets}
 
+%%%%% EPFL vs EPFL (rest) dataset %%%%%%%%%%%%
 
+\begin{table} 
+\centering 
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{l l c c c c c c} 
+\toprule % Top horizontal line
+ & & & \multicolumn{5}{c}{\textbf{Acceleration Approach}} \\ 
+\cmidrule(l){4-7} 
+\textbf{} &  &  & \multicolumn{2}{c}{Training Set} & \multicolumn{2}{c}{Testing Set} &\\ % Column names row
+\cmidrule(l){4-7} 
+\textbf{Train} & \textbf{Test} & \diagbox{Predicted}{Real} & Empty & Full & Empty & Full &\\ % Column names row
+\midrule % In-table horizontal line
+
+\multirow{2}{*}{EPFL 10\%}  & \multirow{2}{*}{EPFL 90\%} & Not Careful & 0.83 & \textcolor{Grey}{0} & \textbf{0.53} &  \textcolor{Grey}{0.19}\\
+  &   & Careful & \textcolor{Grey}{0.17} & 1 & \textcolor{Grey}{0.47} & \textbf{0.81} \\
+  
+  \cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 20\%}  & \multirow{2}{*}{EPFL 80\%} &  & 0.89 & \textcolor{Grey}{0.12} & \textbf{0.5} &  \textcolor{Grey}{0.16}\\
+  &   &  & \textcolor{Grey}{0.11} & 0.88 & \textcolor{Grey}{0.5} & \textbf{0.84}  \\ 
+  
+\cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 30\%}  & \multirow{2}{*}{EPFL 70\%} &  & 0.69 & \textcolor{Grey}{0.09} & \textbf{0.51} &  \textcolor{Grey}{0.15}\\
+  &   &  & \textcolor{Grey}{0.31} & 0.91 & \textcolor{Grey}{0.15} & \textbf{0.85}  \\
+  
+\cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 40\%}  & \multirow{2}{*}{EPFL 60\%} &  & 0.6 & \textcolor{Grey}{0.13} & \textbf{0.55} &  \textcolor{Grey}{0.1}\\
+  &   &  & \textcolor{Grey}{0.4} & 0.87 & \textcolor{Grey}{0.45} & \textbf{0.9}  \\
+
+\cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 50\%}  & \multirow{2}{*}{EPFL 50\%} &  & 0.61 & \textcolor{Grey}{0.16} & \textbf{0.5} &  \textcolor{Grey}{0.1}\\
+  &   &  & \textcolor{Grey}{0.39} & 0.84 & \textcolor{Grey}{0.5} & \textbf{0.9}  \\
+  
+\cmidrule(l){2-7} 
+\multirow{2}{*}{EPFL 60\%}  & \multirow{2}{*}{EPFL 40\%} &  & 0.55 & \textcolor{Grey}{0.08} & \textbf{0.5} &  \textcolor{Grey}{0.15}\\
+  &   &  & \textcolor{Grey}{0.45} & 0.92 & \textcolor{Grey}{0.5} & \textbf{0.85}  \\
+  
+  
+\midrule % In-table horizontal line
+\midrule % In-table horizontal line
+\end{tabular}
+}
+\label{tab:epfl} % A label for referencing this table elsewhere, references are used in text as \ref{label}
+\caption{Training set: small size of the EPFL dataset; Testing set: the rest of the EPFL dataset.}
+\end{table}
 
 %%%%% QMUL dataset %%%%%%%%%%%%
 
