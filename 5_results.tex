@@ -2,8 +2,9 @@
 
 \subsection{Results for different cups}
 
-\begin{table*} 
+\begin{table} 
 \centering 
+\resizebox{\columnwidth}{!}{%
 \begin{tabular}{l l c c c c c c} 
 \toprule % Top horizontal line
  & & & \multicolumn{5}{c}{\textbf{Acceleration Approach}} \\ 
@@ -52,11 +53,13 @@
  & \textcolor{Yellow}{Champagne}  & & \multirow{2}{*}{\textcolor{Grey}{0.39}} & \multirow{2}{*}{0.85} & \multirow{2}{*}{\textcolor{Grey}{0.375}} &  \multirow{2}{*}{\textbf{0.7}}\\ % 
 \textcolor{Yellow}{Red Cup}  & &  &  &  & \\ % 
  
-\bottomrule % Bottom horizontal line
+\midrule % In-table horizontal line
+\midrule % In-table horizontal line
 \end{tabular}
+}
 \caption{One vs Rest Classification. Training set: One cup type; Testing set: Other cup types. \textcolor{Yellow}{Plastic cups}; \textcolor{Green}{Glass cups}}
 \label{tab:one_vs_all} 
-\end{table*}
+\end{table}
 
 Conclusions from Table \ref{tab:one_vs_all}:
 Training on one plastic and testing on the rest: 86\% $\pm$ 2.9\% Full cups are Careful, 49.6\% $\pm$ 2.9\% Empty cups are NOT Careful. Training on one plastic and testing on other plastics: 93\% $\pm$ 2.2\% Full cups are Careful, 52\% $\pm$ 2.1\% Empty cups are NOT Careful. Training on glass and testing on plastics: 83\% Full cups are Careful,	59\% Empty cups are NOT Careful.

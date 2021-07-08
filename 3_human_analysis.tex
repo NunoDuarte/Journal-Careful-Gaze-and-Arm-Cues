@@ -54,6 +54,7 @@ The handover motions are 3D Cartesian coordinates over time which begin at the m
         \label{fig:vel_distance_time}
     \end{figure}
 
+To capture the kinematic of the wrist for all the trials of every participant, cup, and cup condition, irrespective of the starting location in the grasp and the final position for the handover, it was decided to apply min-max normalization before reducing the dimensionality to 1-D vector by calculating the euclidean norm of the $x, y,$ and $z$ dimensions. This re-scales the data to the range [0, 1] where 0 is the final step, refer to as the handover, and 1 is the initial step, refer to as the grasp of the cup from the table. 
 
 - analysis the data distance/velocity (inverse time of flight)
 
