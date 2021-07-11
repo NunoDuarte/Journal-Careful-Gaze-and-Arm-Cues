@@ -54,17 +54,14 @@ The handover motions are 3D Cartesian coordinates over time which begin at the m
         \label{fig:vel_distance_time}
     \end{figure}
 
-To capture the kinematic of the wrist for all the trials of every participant, cup, and cup condition, irrespective of the starting location in the grasp and the final position for the handover, it was decided to apply min-max normalization before reducing the dimensionality to 1-D vector by calculating the euclidean norm of the $x, y,$ and $z$ dimensions. This re-scales the data to the range [0, 1] where 0 is the final step, refer to as the handover, and 1 is the initial step, refer to as the grasp of the cup from the table. 
+To capture the kinematic of the wrist for all the trials of every participant, cup, and cup condition, irrespective of the starting location in the grasp and the final position for the handover, it was decided to apply min-max normalization before reducing the dimensionality to 1-D vector by calculating the euclidean norm of the $x, y,$ and $z$ dimensions. This re-scales the data to the range [0, 1] where 0 is the final step, refer to as the handover, and 1 is the initial step, refer to as the grasp of the cup from the table. Figure \ref{fig:vel_distance_time} depicts handover trajectories, after post-processing, with respect to the first derivative of the euclidean norm. The plot on the top exhibits the kinematic evolution of the human wrist with respect to the position in the handover trajectory. The bottom plots exhibits the same dataset sample of demonstrations and it represents the velocity of the human wrist with respect to time during the handover trajectory. The purpose of these representations is to identify the acceleration and deceleration phase which is of relevance to the approaches presented in the next section. 
 
-- analyse the data distance/velocity (inverse time of flight)
-
-- analyse the data time/velocity
-
-- mention Tamara Flash's work on minimum-jerk model (empirical analysis on point-to-point human motion) and state that the figure 3 gives the same minimum-jerk movement as stated by Flash
-
-- mention that in the results we present two other datasets (QMUL, IST). In section \ref{sec:results} we shows results of two other datasets.
+The common trait of all demonstrations is the typical bell-shape for the velocity profile as humans choose a minimum jerk approach for the hand trajectory. This has been identified in previous works in point-to-point human motion \cite{flash} and this behaviour manifests, likewise, in human object handovers. In contrast, the most notable difference is on the bell-shape's peak, i.e. the maximum velocity reached by the human. As seen in the demonstrations, the difference can be noticed when distinguishing the cups by the level of water contents, as most of the handovers of empty cups reached higher maximum velocities as the handovers of the same cup full of water. The reason is straightforward as a cup filled with water presents an additional challenge during manipulation: transporting the contents inside without spilling or breaking. There is also the added weight of the liquid to the overall mass of the cup, however we argue that the effect of a liquid moving inside a cup due to the oscillations of the human manipulation is more impactfull in deterring quick and jerky movements than a particular heavy object. Additionally, humans tend to build preconceptions of their surroundings and before manipulation tend to estimate the object's mass and the required force to lift and manipulate. As a result, a novel object with an unexpected heavy mass might invoke a slower manipulation in the first encounter but after some attempts, the human adapts the motor control approach and the manipulation can be more natural. This familiarity procedure is not present when manipulating cups with liquid inside, as the content is visible from the first encounter but the risk of spilling is constantly present. For this reason, we consider the level of water to be the most important factor. In Section \ref{sec:results} we will discuss in depth the different cups and the impact of water contents. 
 
 \subsection{Discussion}
 
+- we post-process the data
+- we notice a difference
+- a model the data to note those differences
 - resume what you see from the data analysis of the human wrist
 
