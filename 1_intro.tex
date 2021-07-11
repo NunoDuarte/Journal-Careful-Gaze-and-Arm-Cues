@@ -1,14 +1,11 @@
 \section{Introduction}
 
-what you talk about:
-
 - in the intro you introduce the idea, the challenge, the different ways that people have tried to use to solve it, and your proposal
 
-- you mention the CV people who are trying to detect liquid levels or if the cup has liquid or not from images or videos. There is a problem with occlusions, different types of cups, color of cups, opaque cups (where it is impossible to tell). I propose another way that helps solve that problem
+% small introduction for applications with robots
+Factory plant where people pick objects carefully or not. Elderly people which manipulate things more slowly. This allows robots to detect the type of person it is dealing with. 
 
-- work on CV
-\cite{yu_fill_2015} infer the cup level of water
-\cite{mottaghi_see_2017} reasoning from the level of liquid in containers
+what you talk about:
 
 - learning from demonstration
 \cite{santina_learning_2019} LfD
@@ -17,4 +14,47 @@ what you talk about:
 
 we argue that, although there is some degree of personal choice for each human, the majority of people try to solve this problem using the latter choice. In other words, to simplify the problem of moving from point A to point B with a mug full of coffee we instead just adjust our motion, either by slowing down or reducing the jerkiness of the movements, in order to prevent spilling. And this constitutes, for us, as someone being careful when manipulating an object. 
 
+% soa
+
+- here in the soa you focus on the work related, the neuroscience behind it, the psychology behind it, the non-verbal communication behind it, the different manipulation works, the different handover approaches, the affordances of objects, the impact that weight and object properties has on the human manipulation, mention your previous work
+
+the neuroscience - 
+\cite{alaerts_force_2010} Observing lifting objects of different weights modulate M1, primary motor cortex, in a muscle-specific way. Cortical representation areas in M1 that control the specific muscles used in the observed lifting actions became increasingly facilitated. The higher the M1 excitability is, the heavier is the object. It may contribute, at least partly, to the observer's ability to infer the weight of the object. 
+ \cite{senot_effect_2011}
+Explicit weight-related information => written labels on the objects. - and if there is a conflict between label and object weight. 
+Discussion: Hidden (object hidden-only kinematic cues) - significant modulation of MEPs amplitude according with the force required to hold the object. Visible (visible object and kinematic cues) - not significant different. Labels (labels on the object) - influence the observers - same label for light and heavy object then MEPs amplitude was not significantly different. - different labels => same as in Hidden or Visible conditions. 
+Previous results: high-level semantic cues, such as labels, may influence low-level motor behaviour during execution. - Any time a conflict is present between explicit and implicit movement-related information, the observers motor system stops its mirroring of the observed action -> mirror mechanisms is not blind to semantic info. - predominance of kinematic cues over intrinsic object properties in coding force required to execute an observed lifting action. 
+\cite{lindemann_grasping_2011} biological grasping actions modulated the observer's attention whereas the perception of inanimate stimuli does not.
+
+the psychology -
+\cite{jamone_affordances_2018} A very important paper from JSV to reference
+ \cite{sciutti_development_2019}
+Infer the weight of unknown object - intrinsic feature not directly accessible through vision. Judge weight of objects after watching videos of an actor lifting. At age 6 they can estimate difference in weight by observing different videos of objects. At age 10 the variability of estimation decreases and the accuracy increases. However they usually underestimate the weight. Adults are better at estimating. Improvement of performance reflects the development of children's motor control. - Children's stature was more reliable than their chronological age -> Body heights more directly related to growth than age. - Features important to estimate weight? Temporal and spatial-temporal features of the movements. => duration and absolute velocity. 
+ \cite{sciutti_understanding_2014}
+By action observation we can infer the goal of the action or even the object's weight. This implicit understanding is developed early in childhood and is supposedly based on a common motor repertoire between the cooperators. Results: subjects can reach a performance in weight recognition from robot observation comparable to that obtained during human observations with no need of training. 3 experiments are made in this paper - neural (doing nothing), human action/movie watching - active (while object lifting), robot action - neutral. Known (know the weight and grasp before), Human condition (unknown weight), Interaction (not grasping before). 
+Discussion: robot lifting with standard motion => humans can not estimate weight => obviously! Robot proportional allows! -> weight reading derives a generalization of the skills normally adopted in HHI. Human explicit kinematic whether it is a human or a robot. -> However the robot must exhibit familiar motor behaviours to the human. Otherwise it could cause detrimental effects => uncanny valley. How strong is the human influences how we estimate the object. 
+
+the non-verbal cues -
+\cite{mavridis_review_2015} apparently this is a review on non-verbal cues (I havent read it)
+\cite{duarte_action_2018} my paper "Work from me points that human non-verbal cues from eyes, head, and arm movements decode action intention, and when incorporating onto a robot, it provides similar information to read the robot's intention."
+\cite{palinko_communicative_2015} passing an object relies on the non-verbal communication associated to the passer's motion. Ask the human's to judge the weight of the object
+\cite{sciutti_humanizing_2018} elaborating several important design factors. we are conviced that they build a solid basis and an effective strategy for the development of humane robots. "the ability of the robot to anticipate human behaviour required a very deep knowledge of the motor and cognitive bases of human-human interaction
+\cite{admoni_robot_2016} 
+
+manipulation:
+\cite{hamilton_kinematic_2007} perceptual weight judgment provides a powerful method to study our interpretation of other people's actions, but it is not known what sources of information are used in judging weight
+\cite{kjellstrom_visual_2011} learning the affordance of objects from human demonstration (what else?)
+
+handovers - 
+\cite{Medina2016} only focused on the handover, not the manipulation/transportation. The robot waits for the load share to pass a certain, hand-tuned, human based, threshold.
+
+careful - 
+previous paper \cite{duarte_human_2020} This paper is the prequel to this work.
+\cite{lastrico_careful_2021} the most recent paper that finally measures carefulness. I NEED TO READ THIS PAPER
+ 
+
+% explain the paper
+it is the same data, but different moments or different parts are used to model and classify. the classifier is the same which allows for a fair comparison of both methods. The only things that changes are the methods that take advantage of different things of the dataset.
+
+% contributions
 
