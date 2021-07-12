@@ -1,16 +1,15 @@
 \section{Introduction}
 
-- in the intro you introduce the idea, the challenge, the different ways that people have tried to use to solve it, and your proposal
+\lettrine{C}{ontainers} such as the ones that carry liquids, like cups, glasses, mugs, produce a response on the human when transporting depending on the fillness level. Mayer et al. \cite{mayer_walking_2012} provides an example of a highly familiar challenge to anyone in academia, walking back to one's office while taking mug filled with coffee. They've found that humans try to solve the issue of spilling by either estimating the frequency of sloshing of the liquid and counteract the resonance to suppress it, or by simply being pro-active and careful during manipulation. The authors justify the reason for picking one of the approach down to individual preference, however we argue that most would resort to the latter option as is the one that requires the least effort and with less accidents. 
+
+hence our work aims at exploring this interesting behaviour...
+
+% the challenge, the different ways that people have tried to use to solve it
+
+the purpose of this analysis is that it can provide useful tools for robotics in several scenarios...
 
 % small introduction for applications with robots
 Factory plant where people pick objects carefully or not. Elderly people which manipulate things more slowly. This allows robots to detect the type of person it is dealing with. 
-
-what you talk about:
-
-- learning from demonstration
-\cite{santina_learning_2019} LfD
-
-\cite{mayer_walking_2012} walking with coffee mugs in our daily lives. Whether it is a feedback (closed-loop) control system, i.e. when human being "identifies" the resonant sloshing frequency and then performs a targeted suppression of the resonant mode, or, an open-loop control system, i.e. when a human being simply becomes more careful about carrying a cup regardless of natural frequency of the fluid in it. -> may depend on the individual.
 
 we argue that, although there is some degree of personal choice for each human, the majority of people try to solve this problem using the latter choice. In other words, to simplify the problem of moving from point A to point B with a mug full of coffee we instead just adjust our motion, either by slowing down or reducing the jerkiness of the movements, in order to prevent spilling. And this constitutes, for us, as someone being careful when manipulating an object. 
 
@@ -44,6 +43,7 @@ the non-verbal cues -
 manipulation:
 \cite{hamilton_kinematic_2007} perceptual weight judgment provides a powerful method to study our interpretation of other people's actions, but it is not known what sources of information are used in judging weight
 \cite{kjellstrom_visual_2011} learning the affordance of objects from human demonstration (what else?)
+\cite{santina_learning_2019} LfD
 
 handovers - 
 \cite{Medina2016} only focused on the handover, not the manipulation/transportation. The robot waits for the load share to pass a certain, hand-tuned, human based, threshold.
@@ -51,7 +51,6 @@ handovers -
 careful - 
 previous paper \cite{duarte_human_2020} This paper is the prequel to this work.
 \cite{lastrico_careful_2021} the most recent paper that finally measures carefulness. I NEED TO READ THIS PAPER
- 
 
 % explain the paper
 it is the same data, but different moments or different parts are used to model and classify. the classifier is the same which allows for a fair comparison of both methods. The only things that changes are the methods that take advantage of different things of the dataset.
