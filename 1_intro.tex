@@ -1,48 +1,34 @@
 \section{Introduction}
 
-\lettrine{C}{ontainers} such as the ones that carry liquids, like cups, glasses, mugs, produce a response on the human when transporting depending on the fillness level. Mayer et al. \cite{mayer_walking_2012} provides an example of walking with a mug filled with coffee, a typical challenge to anyone in academia. They've found that humans try to solve the issue of spilling by either estimating the frequency of sloshing of the liquid and counteract the resonance to suppress it, or by simply being pro-active and careful during manipulation. The authors justify the reason for picking one of the approach down to individual preference, however we argue that most would resort to the latter option as is the one that requires the least effort and with less accidents. As such, this paper aims at providing an in depth scope of the manipulation strategies for cups filled with water or completely empty. As it provides two opposite scenarios with contrasting levels of difficulty. The purpose of this analysis is so that it can provide useful features that robots can take advantage. In a factory plant, robots can understand inherent properties of objects, such as fragility or breakableness, by observing how humans interact with it, or in an elderly home, where a robot caretaker needs to adapt to the motor capabilities of each individual. 
-
-% the challenge, the different ways that people have tried to use to solve it
-
-% soa
-% you focus on the work related, the neuroscience behind it, the psychology behind it, the non-verbal communication behind it, the different manipulation works, the different handover approaches, the affordances of objects, the impact that weight and object properties has on the human manipulation, mention your previous work
+\lettrine{C}{ontainers} such as the ones that carry liquids, like cups, glasses, mugs, produce a response on the human when transporting depending on the fillness level. Mayer et al. \cite{mayer_walking_2012} provides an example of walking with a mug filled with coffee, a typical challenge to anyone in academia. They've found that humans try to solve the issue of spilling by either estimating the frequency of sloshing of the liquid and counteract the resonance to suppress it, or by simply being pro-active and careful during manipulation. The authors justify the reason for picking one of the approach down to individual preference, however we argue that most would resort to the latter option as is the one that requires the least effort and with less accidents. 
 
 % neuroscience
-\cite{alaerts_force_2010} Observing lifting objects of different weights modulate M1, primary motor cortex, in a muscle-specific way. Cortical representation areas in M1 that control the specific muscles used in the observed lifting actions became increasingly facilitated. The higher the M1 excitability is, the heavier is the object. It may contribute, at least partly, to the observer's ability to infer the weight of the object. 
- \cite{senot_effect_2011}
-Explicit weight-related information => written labels on the objects. - and if there is a conflict between label and object weight. 
-Discussion: Hidden (object hidden-only kinematic cues) - significant modulation of MEPs amplitude according with the force required to hold the object. Visible (visible object and kinematic cues) - not significant different. Labels (labels on the object) - influence the observers - same label for light and heavy object then MEPs amplitude was not significantly different. - different labels => same as in Hidden or Visible conditions. 
-Previous results: high-level semantic cues, such as labels, may influence low-level motor behaviour during execution. - Any time a conflict is present between explicit and implicit movement-related information, the observers motor system stops its mirroring of the observed action -> mirror mechanisms is not blind to semantic info. - predominance of kinematic cues over intrinsic object properties in coding force required to execute an observed lifting action. 
-\cite{lindemann_grasping_2011} biological grasping actions modulated the observer's attention whereas the perception of inanimate stimuli does not.
+\cite{alaerts_force_2010} Observing lifting objects of different weights modulate M1, primary motor cortex, in a muscle-specific way.  The higher the M1 excitability is, the heavier is the object. It may contribute, at least partly, to the observer's ability to infer the weight of the object. 
+\cite{senot_effect_2011}
+predominance of kinematic cues over intrinsic object properties in coding force required to execute an observed lifting action. 
+\cite{lindemann_grasping_2011} biological grasping actions modulated the observer's attention
 
-the psychology -
-\cite{jamone_affordances_2018} A very important paper from JSV to reference
- \cite{sciutti_development_2019}
-Infer the weight of unknown object - intrinsic feature not directly accessible through vision. Judge weight of objects after watching videos of an actor lifting. At age 6 they can estimate difference in weight by observing different videos of objects. At age 10 the variability of estimation decreases and the accuracy increases. However they usually underestimate the weight. Adults are better at estimating. Improvement of performance reflects the development of children's motor control. - Children's stature was more reliable than their chronological age -> Body heights more directly related to growth than age. - Features important to estimate weight? Temporal and spatial-temporal features of the movements. => duration and absolute velocity. 
- \cite{sciutti_understanding_2014}
-By action observation we can infer the goal of the action or even the object's weight. This implicit understanding is developed early in childhood and is supposedly based on a common motor repertoire between the cooperators. Results: subjects can reach a performance in weight recognition from robot observation comparable to that obtained during human observations with no need of training. 3 experiments are made in this paper - neural (doing nothing), human action/movie watching - active (while object lifting), robot action - neutral. Known (know the weight and grasp before), Human condition (unknown weight), Interaction (not grasping before). 
-Discussion: robot lifting with standard motion => humans can not estimate weight => obviously! Robot proportional allows! -> weight reading derives a generalization of the skills normally adopted in HHI. Human explicit kinematic whether it is a human or a robot. -> However the robot must exhibit familiar motor behaviours to the human. Otherwise it could cause detrimental effects => uncanny valley. How strong is the human influences how we estimate the object. 
+As such, this paper aims at providing an in depth scope of the manipulation strategies for cups filled with water or completely empty. As it provides two opposite scenarios with contrasting levels of difficulty. The purpose of this analysis is so that it can provide useful features that robots can take advantage. 
 
-the non-verbal cues -
-\cite{mavridis_review_2015} apparently this is a review on non-verbal cues (I havent read it)
-\cite{duarte_action_2018} my paper "Work from me points that human non-verbal cues from eyes, head, and arm movements decode action intention, and when incorporating onto a robot, it provides similar information to read the robot's intention."
+In a factory plant, robots can understand inherent properties of objects, such as fragility or breakableness by observing how humans interact with it, or in an elderly home, where a robot caretaker needs to adapt to the motor capabilities of each senior resident. 
+
+% soa
+
+\cite{hamilton_kinematic_2007} \cite{sciutti_understanding_2014} subjects can reach a performance in weight recognition from robot observation comparable to that obtained during human observations with no need of training. Human explicit kinematic whether it is a human or a robot. However the robot must exhibit familiar motor behaviours to the human. 
+\cite{sciutti_development_2019} At age 6 we can estimate difference in weight by observing different videos of objects. Features important to estimate weight are duration and absolute velocity. 
+
+\cite{mavridis_review_2015} review of non-verbal cues. 
+\cite{duarte_action_2018} human non-verbal cues to decode action intention, and when incorporating onto a robot, it provides similar information to read the robot's intention." 
 \cite{palinko_communicative_2015} passing an object relies on the non-verbal communication associated to the passer's motion. Ask the human's to judge the weight of the object
-\cite{sciutti_humanizing_2018} elaborating several important design factors. we are convinced that they build a solid basis and an effective strategy for the development of humane robots. "the ability of the robot to anticipate human behaviour required a very deep knowledge of the motor and cognitive bases of human-human interaction
-\cite{admoni_robot_2016} 
+the robot's ability to anticipate human actions requires knowledge of the motor and cognitive bases of human-human interaction \cite{sciutti_humanizing_2018} \cite{admoni_robot_2016} 
 
-manipulation:
-\cite{hamilton_kinematic_2007} perceptual weight judgment provides a powerful method to study our interpretation of other people's actions, but it is not known what sources of information are used in judging weight
-\cite{kjellstrom_visual_2011} learning the affordance of objects from human demonstration (what else?)
-\cite{santina_learning_2019} LfD
+there have been many works on robot learning from human demonstrations \cite{ravichandar_recent_2020}
 
 minimum-jerk acceleration and deceleration phase of arm motions \cite{fligge_minimum_2012}
 
-handovers - 
-\cite{Medina2016} only focused on the handover, not the manipulation/transportation. The robot waits for the load share to pass a certain, hand-tuned, human based, threshold.
+\cite{Medina2016} only focused on the handover, not the manipulation/transportation. The robot waits for the load share to pass a certain, hand-tuned, human based, threshold.  and studying the impact of human non-verbal cues on the location of the handover \cite{kato_where_2019} and the effects of the objects' weight \cite{hansen_humanhuman_2017}
 
-\cite{hansen_humanhuman_2017} and \cite{kato_where_2019}
-
-\cite{lastrico_careful_2021} the most recent paper that finally measures carefulness. I NEED TO READ THIS PAPER
+recent research has looked into the kinematic motion of manipulating full and empty cups \cite{lastrico_careful_2021}. However their focus was on generating motions that reflect the different strategies and not on utilizing this features for human-robot interactions. 
 
 % structure of the paper
 We start by defining the human-human interaction scenario detailed in Section \ref{sec:human}, describing the experiments, the sensor information collected, and the data chosen to analyse the handover of cups. The human non-verbal cues extracted from the HHI dataset are employed on computational models of kinematic approaches of handover of empty and full of water cups (Section \ref{sec:model}). Two computational models are mentioned, one novel and one previously proposed, that from the handover trajectories extract features to express the kinematic strategies of manipulating empty and full of water cups. The presented classifier allows for a fair metric of both models performance. The accuracy of each model is measured on how well it can distinguish handovers of empty cups as natural manipulations (not careful), and handover of water filled cups as a careful manipulation. In Section \ref{sec:results} it presents additional classification results in order to understand the impact of different types of cups, as well as, other datasets of human handovers with unknown cups, and unknown participants. The developed computational model with the best classification accuracy is incorporated in a robotic controller in Section \ref{sec:robot}. The model runs in a human-in-the-loop system which provides the robot with information on the cup or object interacted by the human as to adapt its motor control approach when grasping or manipulating. The Section \ref{sec:conc} we discuss the findings from our analysis of the human-human data, classification accuracy of the computational models, and human-robot experiments, and finish by outlining future work proposals.  
