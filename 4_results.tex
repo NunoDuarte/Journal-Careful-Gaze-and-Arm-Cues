@@ -221,7 +221,8 @@ Conclusions on IST:
     scale only axis,
     scaled x ticks=base 10:0,
     xmin=0, xmax=1,
-    legend style={at={(0.2,0.05)},anchor=south west}
+    legend style={at={(0.15,0.05)},anchor=south west},
+    legend style={nodes={scale=0.85, transform shape}}
 }
 
 \begin{axis}[
@@ -338,11 +339,11 @@ Conclusions on IST:
 \begin{axis}[
   axis y line*=right,
   axis x line=none,
-  ymin=0, ymax=1,
+  ymin=0, ymax=2,
   ylabel=response time (s)
 ]
-\addlegendimage{/pgfplots/refstyle=plot_one}\addlegendentry{not careful}
-\addlegendimage{/pgfplots/refstyle=plot_two}\addlegendentry{careful}
+\addlegendimage{/pgfplots/refstyle=plot_one}\addlegendentry{not careful accuracy}
+\addlegendimage{/pgfplots/refstyle=plot_two}\addlegendentry{careful accuracy}
 \addplot[smooth,mark=*,blue]
   coordinates{
     (0,1)
@@ -356,7 +357,22 @@ Conclusions on IST:
     (0.8,0.2)
     (0.9,0.1)
     (1,0.1)
-}; \addlegendentry{classifiers}
+}; \addlegendentry{not careful response time}
+
+\addplot[smooth,mark=*,blue]
+  coordinates{
+    (0,1)
+    (0.1,0.9)
+    (0.2,0.8)
+    (0.3,0.7)
+    (0.4,0.6)
+    (0.5,0.5)
+    (0.6,0.4)
+    (0.7,0.3)
+    (0.8,0.2)
+    (0.9,0.1)
+    (1,0.1)
+}; \addlegendentry{careful response time}
 
 \end{axis}
 
